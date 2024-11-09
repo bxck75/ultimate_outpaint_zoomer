@@ -15,7 +15,7 @@ HD 2K Exemple:
 Theses two steps need to be performed sequencialy (Note: step 1 takes ~30 sec/outpainting, step 2 takes 2 min/zoomout: to save GPU time for long videos, these to steps are separated, will add an all-in-one notebook in a future update)
 
 * Step 1 
-  * **(NEW)** [Colab: **Gradio App**: Generate 8k outpainting triplets with user interface (Need GPU)](https://colab.research.google.com/github/PhilSad/stable-diffusion-infinite-outpainting-video/blob/main/notebooks/gradio_infinite_outpaint.ipynb)
+  * **(NEW)** [Colab: **Gradio App**: Generate 8k outpainting triplets with user interface (Need GPU)](https://github.com/bxck75/A1_Colabs/blob/master/notebooks/gradio_infinite_outpaint.ipynb)
   * or
   * [Colab: Generate 8k outpainting triplets automaticaly (Need GPU)](https://colab.research.google.com/github/PhilSad/stable-diffusion-infinite-outpainting-video/blob/main/notebooks/colab_infinite_outpaint_generate_base_images.ipynb)
 * Step 2: [Colab: Generate 2k video (don't need GPU)](https://colab.research.google.com/github/PhilSad/stable-diffusion-infinite-outpainting-video/blob/main/notebooks/colab_infinite_outpaint_generate_video.ipynb)
