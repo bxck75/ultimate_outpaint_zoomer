@@ -3,6 +3,8 @@ import PIL
 from diffusers import StableDiffusionInpaintPipeline
 from outpaint import downscale_and_perlin
 import random
+# Replace cached_download with hf_hub_download
+from huggingface_hub import hf_hub_url, hf_hub_download
 from super_resolution import generate_base_images_ia
 import os
 import torch
@@ -61,7 +63,7 @@ with gr.Blocks() as demo:
         num_images_per_prompt = gr.Number(2, label="num_images_per_prompt")
 
     with gr.Row():
-        prompt = gr.inputs.Textbox(lines=2, label="Prompt")
+        prompt = gr.Textbox(lines=2, label="Prompt")
         generate_btn = gr.Button("Generate", interactive=False, variant="primary")
 
     with gr.Row():
